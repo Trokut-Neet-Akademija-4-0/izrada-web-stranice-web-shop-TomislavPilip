@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Crni grrrrom Pizze na zahtjev</h1>
+
+    <form action="/slanje.php" method="POST">
+      <fieldset style="width: 300px; background-color: lightblue">
+        <legend>Pizza Tomadre</legend>
+        <p>
+          <label for="imemusterije">Ime</label>
+          <input type="text" name="" placeholder="Ime*" id="imemusterije" />
+        </p>
+        <p>
+          <label for="email">E-mail</label>
+          <input type="email" name="" placeholder="E-mail*" id="email" />
+        </p>
+        <p>
+          <label for="tel">Telefon</label>
+          <input type="tel" name="" placeholder="0917540961" id="tel" />
+        </p>
+        <p>
+          <label for="adresa">Adresa</label>
+          <input
+            type="text"
+            name=""
+            placeholder="Sibenska ulica 77"
+            id="adresa"
+          />
+        </p>
+        <p>
+          <label for="comment">Instrukcije za dostavu:</label><br />
+          <textarea
+            name=""
+            id="comment"
+            placeholder="Mozete unijeti najvise 400 znakova"
+            cols="40"
+            rows="10"
+            maxlength="400"
+          ></textarea>
+        </p>
+      </fieldset>
+      <h3>Dizajnirajte svoju pizzu</h3>
+      <fieldset style="width: 300px; background-color: lightblue">
+        <fieldset style="300px">
+          <legend>Korica (odaberite jednu)</legend>
+          <label for="klasicna">Klasicna</label>
+          <input type="radio" name="vrste" value="klasicna" /><br />
+          <label for="">Punjena sunkom</label>
+          <input type="radio" name="vrste" id="" value="punjenasunkom" /><br />
+          <label for="">Punjena sirom</label>
+          <input type="radio" name="vrste" id="" value="punjenasirom" /><br />
+          <label for="">Bez glutena</label>
+          <input
+            type="radio"
+            name="vrste"
+            id=""
+            value="bezlutena"
+          /><br /><br />
+        </fieldset>
+
+        <fieldset style="background-color: lightblue">
+          <legend>Dodaci</legend>
+          <label for="">Rajcica</label>
+          <input type="checkbox" name="dodaci" value="rajcica" /><br />
+          <label for="">Sunka</label>
+          <input type="checkbox" name="dodaci" id="" value="sunka" /><br />
+          <label for="">Mozzarela</label>
+          <input type="checkbox" name="dodaci" id="" value="mozzarela" /><br />
+          <label for="">Prsut</label>
+          <input type="checkbox" name="dodaci" id="" value="prsut" /><br />
+          <label for="">Rikola</label>
+          <input type="checkbox" name="dodaci" id="" value="rikola" /><br />
+          <label for="">Vrhnje</label>
+          <input type="checkbox" name="dodaci" id="" value="vrhnje" /><br />
+        </fieldset>
+        <fieldset>
+          <legend>BROJ</legend>
+          <p>
+            Koliko pizza narucujete:
+            <select name="" id="">
+              <label for=""></label>
+              <option value="">1</option>
+              <option value="">2</option>
+              <option value="">3</option>
+              <option value="">4</option>
+              <option value="">5</option>
+              <option value="">6</option>
+            </select>
+          </p>
+        </fieldset>
+      </fieldset>
+      <br />
+      <button
+        style="
+          padding: 5px;
+          width: 120px;
+          border-radius: 10px;
+          background-color: lightcoral;
+        "
+        type="submit"
+      >
+        Donesite pizze
+      </button>
+      <button
+        type="reset"
+        style="
+          padding: 5px;
+          width: 120px;
+          border-radius: 10px;
+          background-color: lightcoral;
+        "
+      >
+        Reset
+      </button>
+    </form>
+  </body>
+</html>

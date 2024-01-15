@@ -1,0 +1,131 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,500;0,900;1,400&family=Poppins&family=Roboto&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+section {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  padding: 10px 5px 5px 5px;
+}
+.about-section {
+  background: url(../Images/Banner/cycling.jpg) no-repeat left;
+  background-size: 67%;
+  background-color: white;
+  overflow: hidden;
+  padding: 90px 0;
+}
+.inside-container {
+  width: 55%;
+  float: right;
+  background: url(../Images/Banner/bikebanner.jpg) rgba(56, 48, 48, 0.9);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 70px 70px;
+  box-shadow: 4px 4px 8px grey;
+  margin-right: 5px;
+}
+.inside-container h1 {
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 900;
+  color: white;
+}
+.inside-container p {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+  text-align: justify;
+  line-height: 30px;
+  margin-bottom: 40px;
+}
+.meni {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700px;
+  font-size: 16px;
+  color: white;
+  cursor: pointer;
+}
+.meni span:nth-child(1) {
+  transition: all 0.5s ease-in-out;
+}
+.meni span:nth-child(1):hover {
+  font-size: 18px;
+  font-weight: 900;
+}
+.meni span:nth-child(2) {
+  transition: all 0.5s ease-in-out;
+}
+.meni span:nth-child(2):hover {
+  font-size: 18px;
+  font-weight: 900;
+}
+.meni span:nth-child(3) {
+  transition: all 0.5s ease-in-out;
+}
+.meni span:nth-child(3):hover {
+  font-size: 18px;
+  font-weight: 900;
+}
+.meni span a {
+  color: white;
+  text-decoration: none;
+}
+.about-us {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: end;
+  width: 75%;
+  padding: 0px 100px 30px 100px;
+
+  margin-left: 200px;
+  margin-bottom: 20px;
+  box-shadow: 4px 4px 10px grey;
+}
+.about-us .container {
+  width: 100%;
+  padding: 15px 0 15px 0;
+}
+.container p {
+  padding: 10px;
+  color: grey;
+}
+
+@media only screen and (max-width: 1050px) {
+  .inside-container {
+    padding: 20px;
+  }
+}
+@media only screen and (max-width: 850px) {
+  .about-section {
+    background-size: 100%;
+    padding: 70px 40px;
+  }
+
+  .inside-container {
+    padding: 40px;
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .about-section {
+    padding: 0;
+  }
+  .inside-container {
+    padding: 20px;
+  }
+}

@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Asap+Condensed&family=Lobster+Two&family=Oleo+Script&display=swap");
+* {
+  padding: 0;
+  font-family: "Oswald", sans-serif;
+}
+
+.recommendation {
+  display: flex;
+  max-width: 1150px;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  padding-top: 30px;
+}
+section:nth-child(2) h2 {
+  text-align: center;
+  padding-top: 30px;
+}
+section:nth-child(2) h2:after {
+  width: 100px;
+  content: "";
+  height: 3px;
+  background-color: red;
+  display: inline;
+  text-align: center;
+}
+.product_main {
+  width: 25%;
+  box-shadow: 8px 8px 15px silver;
+  box-sizing: border-box;
+  transition: ease-in-out 0.5s;
+  position: relative;
+  background: linear-gradient(
+    45deg,
+    rgba(15, 52, 67, 0.2) 0%,
+    rgba(52, 232, 158, 0.2)
+  );
+  display: flex; /* Add this to make the inner elements flex containers */
+  flex-direction: column; /* Stack the inner elements vertically */
+}
+.product_main img:first-of-type {
+  width: 100%;
+}
+.product_main:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+.product_recommendation_info {
+  padding: 10px;
+}
+ul {
+  list-style-type: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.fa-solid {
+  font-size: 30px;
+}
+.checked {
+  color: orange;
+}
+.fa-heart {
+  position: absolute;
+  top: 1%;
+  right: 1%;
+  transition: 0.2 ease;
+  cursor: pointer;
+}
+.fa-heart:active {
+  color: red;
+  cursor: pointer;
+}
+.product_price {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 18px;
+  font-weight: 600;
+  color: red;
+  padding: 10px;
+}
+.product_price div:first-child {
+  text-align: left;
+  flex: 3;
+}
+.product_price div:nth-child(2) {
+  text-align: right;
+  flex: 1;
+}
+.product_buy {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.product_buy {
+  color: aliceblue;
+}
+.product_number {
+  color: white;
+}
+.product_number i {
+  color: black;
+  padding-right: 10px;
+}
+.recommendation_basket {
+  text-decoration: none;
+  background-color: black;
+  color: antiquewhite;
+  border-radius: 10px;
+  transition: 0.2s ease-in-out;
+  padding: 10px;
+}
+.recommendation_basket:hover {
+  transform: scale(1.05);
+}
+.recommendation_basket span {
+  padding: 5px;
+}
+.recommendation_basket a {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+@media only screen and (max-width: 650px) {
+  ul {
+    display: none;
+  }
+  .product_buy {
+    display: flex;
+    flex-direction: column;
+  }
+}

@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,500;0,900;1,400&family=Poppins&family=Roboto&display=swap");
+
+/*Glavni dijelovi HTML-a*/
+root {
+  --main-font-family: "Oswald", sans-serif;
+  --secondary-font-family: "Playfair Display", serif;
+  --third-font-family: ;
+  --main-color: #e25822;
+  --main-backgorund-color: ;
+}
+* {
+  font-family: "Oswald", sans-serif;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+body {
+  padding: 0;
+  margin: 0;
+}
+section {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 25px;
+  background: url(../Images/checkout/background.jpg) rgba(56, 48, 48, 0.9);
+  background-blend-mode: darken;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+section form {
+  padding: 20px;
+  width: 800px;
+  background-color: rgb(254, 254, 254, 0);
+  box-shadow: 3px 3px 7.5px white;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+h1,
+h2 {
+  font-family: "Playfair Display", serif;
+}
+
+/*Klase i selektori*/
+.checkout {
+  max-width: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+}
+.checkout h2 {
+  color: white;
+}
+.billing-adress {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+.payment {
+  padding: 30px;
+}
+.col1 {
+  padding: 8px;
+  color: white;
+}
+.col1 h2 {
+  font-size: 22px;
+  color: #333;
+  padding-bottom: 8px;
+}
+.col1 span {
+  margin-bottom: 3px;
+  display: block;
+}
+.col1 input {
+  width: 100%;
+  box-shadow: 1px 1px 2px grey;
+  padding: 10px 15px;
+}
+.state-zip {
+  display: flex;
+  column-gap: 10px;
+}
+.card-images {
+  display: flex;
+  column-gap: 5px;
+}
+.card-info {
+  display: flex;
+}
+.cards span {
+  color: white;
+}
+form button {
+  width: 90%;
+  padding: 10px;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.5s ease-in-out;
+}
+form button:hover {
+  transform: scale(1.05);
+  font-size: 14px;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 800px) {
+  section form {
+    flex-wrap: no-wrap;
+    flex-direction: column;
+    width: 100%;
+  }
+  .checkout {
+    flex-direction: column;
+  }
+}

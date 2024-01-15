@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather&family=Montserrat:wght@100;400&family=Oswald:wght@600&family=Playfair+Display:ital,wght@0,500;0,900;1,400&family=Poppins&family=Roboto&display=swap");
+
+/*Glavni elemnti HTMLa*/
+aside {
+  width: 250px;
+  box-shadow: 4px 4px 8px rgb(162, 156, 156);
+  padding: 20px;
+}
+
+/*Fontovi*/
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display", serif;
+}
+* {
+  font-family: "Oswald", sans-serif;
+}
+
+/*section 1 .category*/
+/*Naslovi i podnaslovi*/
+h3 {
+  border-bottom: 0.5px solid grey;
+}
+h4 {
+  margin-bottom: 0px;
+  font-size: 18px;
+  font-weight: 600;
+  text-shadow: 1px 1px 1px rgb(188, 188, 188);
+}
+
+/*Glavni odjeljci*/
+.category {
+  border-bottom: 0.5px solid grey;
+}
+.category p {
+  margin: 2px;
+}
+
+.first_line {
+  width: 150px;
+  height: 2.5px;
+  background-color: yellow;
+}
+.checkbox {
+  width: 30px;
+  height: 30px;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  border: 0.1px solid grey;
+  accent-color: yellow;
+  background-color: black;
+  box-shadow: 1px 1px 2px grey;
+  margin-right: 10px;
+}
+.aside_product_number {
+  color: grey;
+  padding-left: 5rem;
+  position: absolute;
+}
+
+/*Section 2 .bikebrands*/
+.bike_brands {
+  border-bottom: 0.5px solid grey;
+}
+.bike_brands p {
+  margin: 2px;
+}
+/*Section 3 .bike_size*/
+.bike_size {
+  border-bottom: 0.5px solid grey;
+}
+.bike_size p {
+  margin: 2px;
+}
+
+/*section 4 .bike_price*/
+.separator {
+  width: 160px;
+  height: 1px;
+  background-color: grey;
+  margin: 5px;
+  text-align: center;
+}
+.price_input {
+  padding: 5px;
+}
+form button {
+  display: block;
+  margin: 0 auto;
+}
