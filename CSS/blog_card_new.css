@@ -144,3 +144,11 @@ section {
     flex-direction: column;
   }
 }
+@media only screen and (max-width: 650px) {
+  .naslov span h3 {
+    display: none;
+  }
+  .naslov h2 {
+    display: none;
+  }
+}
